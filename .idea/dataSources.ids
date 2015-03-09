@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails sample-app: development" uuid="b7d4c5f7-dc83-4d9c-9c6b-06b6f1e3cc0a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails sample-app: test" uuid="8f0a4a53-e467-4724-8327-22ec5ba8e2ad">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
