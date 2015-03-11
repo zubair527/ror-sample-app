@@ -22,4 +22,11 @@ class UserTest < ActiveSupport::TestCase
     @user.email = 'a' * 244 + '@example.com' # assuming total allowed email length 255.
     assert_not @user.valid?
   end
+
+  test 'email_should_be_unique' do
+    duplicate_user = @user.dup
+    duplicate_user.email = @user.email.upcase
+    @user.save
+    assert_not duplicate_user.valid?
+  end
 end
