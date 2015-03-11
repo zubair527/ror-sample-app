@@ -14,12 +14,12 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'name_is_required' do
-    @user.name = ' '
+    @user.name = 'a' * 51
     assert_not @user.valid?
   end
 
   test 'email_is_required' do
-    @user.email = ' '
+    @user.email = 'a' * 244 + '@example.com' # assuming total allowed email length 255.
     assert_not @user.valid?
   end
 end
