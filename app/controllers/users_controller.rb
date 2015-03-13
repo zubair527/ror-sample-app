@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # do something interesting
+      flash[:success] = "Hi #{@user.name}, Welcome the zombie twitter :)"
       redirect_to @user
     else
       render 'new'
